@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANDEEL DESIGN STUDIO ©</title>
+    <link rel="icon" type="image/png" href="assets/imgs/kandeel-icon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://api.fontshare.com/v2/css?f[]=supreme@400,300,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body class="max-w-[1920px] mx-auto">
+    <nav class="bg-black/40 px-6 py-4 flex flex-row justify-between items-center top-0 left-0 right-0 fixed z-10">
+        <a href="#inicio">
+            <img class="h-4" src="assets/imgs/kdl-nav.png" alt="kdl-nav.png">
+        </a>
+    
+        <!-- Botón hamburguesa — solo en mobile -->
+        <button id="menu-btn" class="md:hidden text-[#d7ba97] focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    
+        <!-- Links desktop -->
+        <div class="text-[#d7ba97] flex gap-3 font-brand text-xs max-md:hidden">
+            <a href="#about">ABOUT</a>
+            <a href="#work">WORK</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </nav>
+    
+    <!-- Menú mobile -->
+    <div id="mobile-menu" class="hidden fixed top-14 left-0 right-0 bg-black z-10 flex flex-col items-center gap-6 py-8 font-brand text-[#d7ba97] text-sm md:hidden">
+        <a href="#about">ABOUT</a>
+        <a href="#work">WORK</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+    
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+
+    <section>
+        <header id="inicio">
+            <div class="hero-bg flex flex-col items-center justify-center gap-8">
+                <!--<img src="" alt="img-hero-kdl.png" class="text-white">-->
+                <h1 class="flex flex-col items-center justify-center text-[#d7ba97] text-6xl font-extrabold font-brand pt-30">MAKE YOUR BRAND</h1>
+                <img src="assets/imgs/burn-bright.gif" alt="" class="h-120 -mb-40 -mt-50">
+                <p class="text-[#d7ba97] text-center text-sm font-brand font-light ">We build distinctive identities for businesses ready to show what they are made of.</p>
+            </div>
+        </header>
+    </section>
+
+
+    <section class="bg-black px-40 pt-11 pb-30 ">
+        <div class="text-white flex justify-center gap-24 font-brand">
+            <div class= "font-oswald font-medium text-white text-5xl">
+                <p class="text-[#d7ba97]">Your business</p>
+                <p class="text-[#d7ba97]">has grown.</p><p class="text-red-700 pt-4">Has your brand?</p>
+        </div>
+        <div>
+            <div class="text-right font-brand font-light flex flex-col gap-6 text-[#d7ba97]">
+                <p>Your business may have evolved, <br>your offer may have improved, and your ambitions <br> may be bigger than when you started.</p>
+                <div class="flex flex-col items-end">
+                    <p class="font-semibold">But your brand can get left behind.</p>
+                    <img src="assets/imgs/red-divider.png" alt="red-divider.png" class="w-72 object-cover">
+                </div>
+                <p>Kandeel helps close the gap between the quality <br> of your business and the way it is perceived.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="mx-auto" style="width: 100%; line-height: 0;">
+        <img src="assets/imgs/burnt-paper-divider.png" alt="burnt-paper-divider.png" style="width: 100%; display: block;" />
+    </div>
+
+
+    <section id="about" class="bg-[#d7ba97] px-35 pt-20 pb-20 flex flex-row items-top gap-20">
+        <div class="flex flex-col gap-5 w-1/2">
+            <p class="font-brand font-semibold text-black text-2xl">We find what makes your brand yours, turn it into a distinctive identity, and build a visual world that works everywhere.</p> 
+        </div>
+        <div class="flex flex-col gap-8 w-1/2 items-start justify-between">
+            <div class="flex flex-row gap-5">
+                <img src="assets/imgs/charcoal1.png" alt="charcoal1.png" class="h-16 object-cover">
+                <div>
+                    <p class="font-brand font-semibold text-black">Brand DNA</p>
+                    <p class="font-brand font-light text-black">We uncover what makes your brand unique — its personality, character, and what it stands for.</p>
+                </div>
+            </div>
+            <div class="flex flex-row gap-5">
+                <img src="assets/imgs/charcoal2.png" alt="charcoal2.png" class="h-16 object-cover">
+                <div>
+                    <p class="font-brand font-semibold text-black">Identity</p>
+                    <p class="font-brand font-light text-black">We turn that into a visual identity, giving special attention to the symbols and details that make your brand recognizable and built to last.</p>
+                </div>
+            </div>
+            <div class="flex flex-row gap-5">
+                <img src="assets/imgs/charcoal3.png" alt="charcoal3.png" class="h-16 object-cover">
+                <div>
+                    <p class="font-brand font-semibold text-black">Systems</p>
+                    <p class="font-brand font-light text-black">We build a complete visual world that can adapt and work consistently across every touchpoint.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-[#d7ba97] px-2 py-2">
+        <div class="flex justify-center">
+            <img src="assets/imgs/charcoal-stroke-divider.png" alt="divider.png" class="w-320 object-cover">
+        </div>
+    </section>
+
+
+    <section class="bg-[#d7ba97] py-24 px-40 flex flex-row justify-between gap-10">
+        <div class="flex flex-col items-start justify-center gap-2">
+            <div class="font-brand flex flex-row gap-2 items-center text-3xl">
+                <p class="text-red-700 font-semibold">04</p>
+                <p class="font-brand font-semibold ">FOUNDING CLIENTS</p>
+            </div>
+            <div>
+                <p class="font-brand text-8xl font-black m">BE ONE OF <br> THE FIRST</p>
+            </div>
+        </div>
+        <div class="font-brand flex flex-col gap-8">
+            <p class="text-2xl font-bold">Kandeel is opening its doors to a limited <br> number of businesses ready to build a <br> stronger brand.</p>
+            <div class="text-lg">
+                <p>We're currently selecting our first international clients and <br>offering <span class=" text-red-700">preferred founding rates</span> while we build Kandeel's <br> first body of work.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-[#d7ba97] px-24 py-10 flex justify-between gap-16">
+        <div class="font-brand flex flex-col gap-6">
+            <p class="font-bold text-xl">
+                A Stronger Brand
+            </p>
+            <p>
+                Build an identity that reflects the quality of the business you've already built.
+            </p>
+        </div>
+        <img src="assets/imgs/horizontal-divider.png" alt="" class="h-28 object-contain items-stretch">
+        <div class="font-brand flex flex-col gap-6">
+            <p class="font-bold text-xl">
+                A Complete Identity
+            </p>
+            <p>
+                Strategy, identity and systems designed as one coherent brand.
+            </p>
+        </div>
+        <img src="assets/imgs/horizontal-divider.png" alt="" class="h-28 object-contain items-stretch">
+        <div class="font-brand flex flex-col gap-6">
+            <p class="font-bold text-xl">
+                A Founding Rate
+            </p>
+            <p>
+                Join Kandeel during its first international chapter and receive preferred project pricing.
+            </p>
+        </div>
+    </section>
+
+
+    <section id="work" class="bg-black px-24 py-20 flex flex-row items-start justify-center gap-40">
+        <div class="font-brand">
+            <p class="text-red-700 text-6xl font-black">
+                KANDEEL IS NEW
+            </p>
+            <p class="text-[#d7ba97] text-6xl font-black">
+                THE PEOPLE
+            </p>
+            <p class="text-[#d7ba97] text-6xl font-black">
+                BEHIND IT AREN'T
+            </p>
+        </div>
+        <div>
+            <p class="text-[#d7ba97] max-w-sm text-lg">
+                Kandeel brings together independent designers with years of experience working across branding, identity and visual communication.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- -->
+    <section class="bg-black px-6 py-20 flex flex-row items-start justify-center gap-20">
+        <div class="flex flex-col items-center">
+            <img src="assets/imgs/rodrigo 1.png" alt="" class="h-44 w-auto mb-4">
+            <p class="font-brand text-[#d7ba97] font-semibold">
+                Rodrigo Kovalchuk
+            </p>
+            <p class="font-brand text-[#d7ba97]">
+                Brand Designer
+            </p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="assets/imgs/elias 1.png" alt="" class="h-44 w-auto mb-4">
+            <p class="font-brand text-[#d7ba97] font-semibold">
+                Elias Ojeda
+            </p>
+            <p class="font-brand text-[#d7ba97]">
+                Brand Designer
+            </p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="assets/imgs/Koki 1.png" alt="" class="h-44 w-auto mb-4">
+            <p class="font-brand text-[#d7ba97] font-semibold">
+                Koki Chaparro
+            </p>
+            <p class="font-brand text-[#d7ba97]">
+                Print Production
+            </p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="assets/imgs/Guillermo 1.png" alt="" class="h-44 w-auto mb-4">
+            <p class="font-brand text-[#d7ba97] font-semibold">
+                Guillermo Dominguez
+            </p>
+            <p class="font-brand text-[#d7ba97]">
+                Brand Designer
+            </p>
+        </div>
+    </section>
+
+    <section class="bg-[#CC2427] px-12 py-12 font-brand text-[#d7ba97] flex flex-row gap-20 justify-center">
+        <div class="flex flex-col justify-start items-end">
+            <p class="text-3xl">
+                FROM PARAGUAY
+            </p>
+            <p class=" text-3xl font-bold">
+                OPEN TO THE WORLD
+            </p>
+        </div>
+        <div>
+            <p class="max-w-sm">
+                We’re expanding Kandeel across industries and international markets, partnering with businesses that are ready to grow into their next chapter.
+            </p>
+        </div>
+    </section>
+    
+    <section id="contact" class="bg-black flex flex-row items-start justify-center gap-20 py-16">
+        <div class="font-brand">
+            <p class="text-[#d7ba97]">READY TO</p>
+            <p class="text-[#d7ba97]">TURN UP</p>
+            <p class="text-red-700">THE HEAT?</p>
+        </div>
+        <div>
+            <form id="contact-form" action="https://formspree.io/f/xgaernnv" method="POST" class="flex flex-col gap-4 w-full">
+    
+                <div class="flex flex-row gap-4">
+                    <input name="last_name" type="text" placeholder="Last Name" 
+                        class="w-1/2 bg-[#1a1a1a] text-[#d7ba97] placeholder-gray-600 border border-[#2a2a2a] rounded-lg px-4 py-3 font-brand outline-none focus:border-red-700"/>
+                    <input name="first_name" type="text" placeholder="First Name" 
+                        class="w-1/2 bg-[#1a1a1a] text-[#d7ba97] placeholder-gray-600 border border-[#2a2a2a] rounded-lg px-4 py-3 font-brand outline-none focus:border-red-700"/>
+                </div>
+    
+                <input name="email" type="email" placeholder="Email" 
+                    class="bg-[#1a1a1a] text-[#d7ba97] placeholder-gray-600 border border-[#2a2a2a] rounded-lg px-4 py-3 font-brand outline-none focus:border-red-700"/>
+    
+                <textarea name="message" placeholder="Message" rows="5"
+                    class="bg-[#1a1a1a] text-[#d7ba97] placeholder-gray-600 border border-[#2a2a2a] rounded-lg px-4 py-3 font-brand outline-none focus:border-red-700 resize-none"></textarea>
+    
+                <!-- Mensaje de éxito oculto -->
+                <p id="success-msg" class="text-red-700 font-brand text-center hidden">
+                    Message sent. We'll be in touch soon.
+                </p>
+    
+                <button type="submit" class="bg-red-700 text-white font-brand font-semibold py-3 rounded-lg hover:bg-red-600 transition-colors">
+                    Contact Us
+                </button>
+    
+            </form>
+        </div>
+    </section>
+    
+    <script>
+        const form = document.getElementById('contact-form');
+        const successMsg = document.getElementById('success-msg');
+    
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+    
+            const data = new FormData(form);
+    
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            });
+    
+            if (response.ok) {
+                form.reset();
+                successMsg.classList.remove('hidden');
+            }
+        });
+    </script>
+
+
+</body>
+</html>
